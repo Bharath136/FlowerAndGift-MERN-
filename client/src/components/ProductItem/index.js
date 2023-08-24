@@ -37,7 +37,7 @@ const ProductItem = ({ id, name, description, price, img }) => {
       <ProductName>{name}</ProductName>
       <ProductPrice>${price}</ProductPrice>
       <ButtonContainer>
-        <Link to={`/order-details/${id}`}>Buy Now</Link>
+        <Link to={`/order-details/${id}`} className="btn btn-primary" style={{borderRadius:'0'}}>Buy Now</Link>
         <Button onClick={handleAddToCart}>Add to Cart</Button>
       </ButtonContainer>
       {/* <div>

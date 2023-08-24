@@ -48,7 +48,7 @@ const Login = () => {
                 } else if (data.jwtToken) {
                     localStorage.setItem('adminJwtToken', data.jwtToken, { expires: 30 });
                     Cookies.setItem('userName', data.user.firstname);
-                    navigate('/admin/all-products');
+                    navigate('/admin/dashboard');
                 }
             } else {
                 alert("Email or Password didn't match");
